@@ -1,0 +1,35 @@
+.message__list-item {
+  list-style: none;
+}
+
+.message__list-item-container {
+  flex-grow: 1;
+  display: flex;
+  padding-bottom: 48px;
+  width: 100%;
+}
+
+.message__list-item-username {
+  margin-right: 10px;
+  color: #ee3465;
+}
+
+.message__list-item-text {
+  margin: 0;
+  padding: 16px;
+  border-radius: 24px;
+  background-color: #2f2f2f;
+}
+
+.message__list-item-user-response {
+  flex-direction: row-reverse;
+}
+
+.message__list-item-user-response-text {
+  background-color: #ee3465;
+}
+
+.message__list-item-username-response {
+  margin-right: 0;
+  margin-left: 10px;
+}

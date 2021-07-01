@@ -1,17 +1,19 @@
 .message-list {
-  height: 800px;
-  padding: 32px 25px;
-  margin: 0 auto;
-  width: 700px;
+  width: 100%;
+  padding: 120px 0 80px;
+  margin: 0;
   overflow-y: auto;
   box-sizing: border-box;
 }
 
 .message-list::-webkit-scrollbar {
-  width: 8px;
-  background-color: lightgray;
+  display: none;
 }
 
-.message-list::-webkit-scrollbar-thumb {
-  background-color: darkgray;
+@media screen and (min-width: 768px) {
+  .message-list {
+    width: 700px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

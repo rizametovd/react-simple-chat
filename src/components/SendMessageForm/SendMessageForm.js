@@ -39,16 +39,24 @@ function SendMessageForm({ handleUserMessage }) {
     resetForm();
   }
 
+  function handleEnterPress(e) {
+    if (e.key === 'Enter' && inputValue.trim() !== '') {
+      handleSubmit(e);
+    }
+  }
+
   return (
     <section className='send-message'>
       <form className='send-message__form' onSubmit={handleSubmit}>
         <label className='send-message__form'>
-          <input
+          <textarea
             className='send-message__form-input'
             name='message-input'
             placeholder='Напишите что-нибудь...'
             value={inputValue || ''}
             onChange={handleInput}
+            autoComplete='off'
+            onKeyDown={handleEnterPress}
           />
         </label>
         <button className='send-message__submit-btn' type='submit' disabled={!isDisabled}>

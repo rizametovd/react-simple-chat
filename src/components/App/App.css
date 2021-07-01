@@ -1,13 +1,12 @@
 .page {
+  min-height: 100vh;
   font-family: 'Inter', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
   background-color: #202020;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0 auto;
-  height: 100vh;
-  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
 }

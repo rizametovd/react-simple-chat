@@ -1,13 +1,16 @@
 .send-message {
-  padding: 16px 0;
+  padding: 16px 0 40px;
   height: 100px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: stretch;
   border-top: 1px solid #424242;
   box-sizing: border-box;
-  width: 700px;
+  width: calc(100% - 30px);
   margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  background-color: #202020;
 }
 
 .send-message__form {
@@ -16,20 +19,21 @@
 }
 
 .send-message__form-input {
-  width: 540px;
+  font-size: 14px;
+  line-height: 20px;
   height: 24px;
   border: none;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 13px;
   outline: none;
   background-color: #f2f2f2;
-  /* box-sizing: border-box; */
 }
 
 .send-message__submit-btn {
+  display: none;
   background-color: #4285f4;
   color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
   padding: 15px;
   cursor: pointer;
@@ -43,4 +47,27 @@
 .send-message__submit-btn:hover:enabled {
   transition: 0.5s;
   opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+  .send-message {
+    width: 700px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    /* padding-left: 0;
+    padding-right: 0; */
+  }
+
+  .send-message__form-input {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .send-message__submit-btn {
+    display: block;
+  }
 }

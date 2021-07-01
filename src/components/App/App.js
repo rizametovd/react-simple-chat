@@ -34,7 +34,6 @@ function App() {
             <SignIn handleSignIn={handleSignIn} />
           </Route>
         )}
-
         <Route>{loggedIn ? <Redirect to={MAIN_PAGE} /> : <Redirect to={SIGN_IN} />}</Route>
       </Switch>
     </div>

@@ -1,12 +1,10 @@
 .signin {
-  width: 396px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .signin__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
+  max-width: 396px;
 }
 
 .signin__form-text {
@@ -14,12 +12,7 @@
   line-height: 34px;
   text-align: center;
   margin: 0;
-  padding: 100px 0;
-}
-
-.signin__form-label {
-  margin-bottom: 30px;
-  width: 100%;
+  padding: 150px 0;
 }
 
 .signin__form-input {
@@ -29,6 +22,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 15px;
+  margin-bottom: 30px;
   color: white;
   outline: none;
 }

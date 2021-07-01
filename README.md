@@ -9,7 +9,9 @@
 
 
 ## Описание
-SPA приложение — чат на React и FireBase.
+SPA приложение — чат на React и FireBase.</br>
+[Деплой на FireBase](https://chat-72d11.web.app/)</br>
+[Деплой на собственный VPS](https://react-simple-chat.rizametov.com/)
 
 ## Стек
 * React

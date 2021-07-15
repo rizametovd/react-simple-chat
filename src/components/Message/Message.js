@@ -1,18 +1,6 @@
 import './Message.css';
 
-/**
- *
- * @param props
- * @param props.message Сообщение
- * @param props.userName Имя пользователя
- * @param props.lastMessageRef Реф на сообщение для авто-скролла
- */
-
 function Message({ message, userName, lastMessageRef }) {
-  /**
-   * Определяет автора сообщения
-   * @type {Boolean}
-   */
   const isUserName = userName === message.name ? true : false;
 
   return (

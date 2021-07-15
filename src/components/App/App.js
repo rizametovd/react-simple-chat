@@ -10,10 +10,6 @@ function App() {
   const [userName, setUserName] = useState('');
   const [loggedIn, setLoggedIn] = useState(false);
 
-  /**
-   * Устанавливает стейты: имя пользователя и стейт 'авторизации'
-   * @param {string} userName Имя пользователя
-   */
   function handleSignIn(userName) {
     setUserName(userName);
     setLoggedIn(true);

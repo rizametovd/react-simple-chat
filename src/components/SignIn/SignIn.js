@@ -1,11 +1,6 @@
 import { useEffect, useState } from 'react';
 import './SignIn.css';
 
-/**
- * Авторизирует пользователя после ввода имени
- * @param props
- * @param props.handleSignIn Функция, которая устанавливает стейт name в App.js
- */
 function SignIn({ handleSignIn }) {
   const [name, setName] = useState('');
   const [isDisabled, setIsDisabled] = useState(false);
@@ -18,10 +13,6 @@ function SignIn({ handleSignIn }) {
     setName(e.target.value);
   }
 
-  /**
-   * По клику на submit вызывает handleSignIn(name) и записивывает введенное пользователем имя в стейт userName
-   * @param {Object} e Объект события
-   */
   function handleSubmit(e) {
     e.preventDefault();
     handleSignIn(name);

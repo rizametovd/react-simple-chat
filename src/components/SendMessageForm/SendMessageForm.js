@@ -5,19 +5,11 @@ function SendMessageForm({ handleUserMessage }) {
   const [inputValue, setInput] = useState('');
   const [isDisabled, setIsDisabled] = useState(false);
 
-  /**
-   * Получает значение инпута и добавляет его в стейт inputValue
-   * @param {Object} e Объект события
-   */
   function handleInput(e) {
-    /** Значение инпута */
     const userInput = e.target.value;
     setInput(userInput);
   }
 
-  /**
-   * Очищает поле ввода сообщения
-   */
   function resetForm() {
     setInput('');
   }
@@ -26,10 +18,6 @@ function SendMessageForm({ handleUserMessage }) {
     inputValue.length > 0 ? setIsDisabled(true) : setIsDisabled(false);
   }, [inputValue]);
 
-  /**
-   * Отменяет действие по-умолчанию на submit и передает значение стейта inputValue в функцию handleUserMessage
-   * @param {Object} e Объект события
-   */
   function handleSubmit(e) {
     e.preventDefault();
     handleUserMessage({
